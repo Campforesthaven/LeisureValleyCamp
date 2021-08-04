@@ -1,0 +1,32 @@
+
+
+
+/* font-family */
+@font-face {
+    font-family: Yellowtail;
+    src: url(../fonts/Yellowtail/Yellowtail-Regular.ttf);
+}
+
+/* font-family Nunito Extra Light*/
+@font-face {
+    font-family: NunitoExtraLight;
+    src: url(../fonts/Nunito/Nunito-ExtraLight.ttf);
+}
+
+/* font-family Nunito Regular*/
+@font-face {
+    font-family: NunitoRegular;
+    src: url(../fonts/Nunito/Nunito-Regular.ttf);
+}
+
+/* font-family Hind Siliguri light*/
+@font-face {
+    font-family: HindSiligurLight;
+    src: url(../fonts/Hind_Siliguri/HindSiliguri-Light.ttf);
+}
+
+/* font-family Hind Siliguri Medium*/
+@font-face {
+    font-family: HindSiliguriMedium;
+    src: url(../fonts/Hind_Siliguri/HindSiliguri-Medium.ttf);
+}

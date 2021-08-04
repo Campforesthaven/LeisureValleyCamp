@@ -1,0 +1,415 @@
+/*-------------------- Custom --------------------*/
+/*-------------------- /Custom --------------------*/
+
+@import url(../css/fonts.css);
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+
+    /*-------------------- Theme font-family --------------------*/
+    --Yellowtail: 'Yellowtail', cursive;
+    --NunitoExtraLight: 'NunitoExtraLight', cursive;
+    --NunitoRegular: 'NunitoRegular', cursive;
+    --HindSiligurLight: 'HindSiligurLight', cursive;
+    --HindSiliguriMedium: 'HindSiliguriMedium', cursive;
+
+    /*-------------------- /Theme font-family --------------------*/
+
+    /*-------------------- Theme colors --------------------*/
+    --text-gray: gray;
+    --dark-moss-green: #545e31ff;
+    --kombu-green: #283618ff;
+    --cornsilk: #fefae0ff;
+    --fawn: #dda15eff;
+    --liver-dogs: #f6d365;
+    --smoky-black: #100a05ff;
+       
+    /*-------------------- /Theme colors --------------------*/
+
+    /*-------------------- Theme gradient --------------------*/
+    --line: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+
+    /*-------------------- /Theme gradient --------------------*/
+}
+
+
+/*-------------------- Global classes --------------------*/
+a{
+    text-decoration: none;
+    color: var(--cornsilk);
+}
+
+a:hover{
+    text-decoration: none;
+    color: var(--cornsilk);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Yellowtail);
+    font-size: 10rem;
+}
+
+h2{
+    font-family: var(--Yellowtail);
+    font-size: 2rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    font-family: var(--HindSiliguriMedium);
+    cursor: pointer;
+}
+
+
+
+/*-------------------- /Global classes --------------------*/
+
+
+
+/*-------------------- Nave --------------------*/
+
+.nav{
+    background: var(--kombu-green);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 5vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+    text-shadow:
+    -2px 2px 5px #000,
+    2px 2px 5px #000,
+    2px -2px 5px #000,
+    -2px -2px 5px #000;
+}
+
+.nav .nav-menu .icon{
+    text-shadow: none;
+    padding-top: 1rem;
+    position: static;
+    font-size: 3rem;
+
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+    
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--cornsilk);
+}
+
+.nav .toggle-collapse .toggle-icons i:hover{
+    color: var(--liver-dogs);
+}
+
+
+.collapse{
+    height: 38rem;
+}
+
+.nav .nav-items{   
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--NunitoRegular);
+    font-size: 1.1rem;
+}
+
+.nav .nav-items :hover{
+    background-color: var(--dark-moss-green);
+}
+
+.nav .nav-items .nav-link a:hover{
+    color: var(--fawn);
+}
+
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    ;
+    display: block;
+    font-family: var(--Yellowtail);
+    font-size: 1.6rem;
+    text-decoration: underline;
+    position: static;
+}
+
+
+.nav .social{
+    padding: 1.4rem 0;
+    
+}
+
+.nav .social i{
+    padding: 0.2rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.nav .social i:hover{
+    color: var(--fawn);
+    
+}
+
+/*-------------------- /Nave --------------------*/
+
+/*-------------------- Main site Section --------------------*/
+
+/*-------------------- Site Title --------------------*/
+
+
+main .site-title{
+    background: url(../assest/logo.jpg);
+    background-size:cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    border-top:solid black .2rem;
+    border-bottom:solid black .2rem;
+}
+
+main .site-title .site-background{    
+    text-align: center;
+    color: white;
+}
+
+main .site-title h1{
+    text-shadow:
+    -2px 2px 5px #000,
+    2px 2px 5px #000,
+    2px -2px 5px #000,
+    -2px -2px 5px #000;
+    color: var(--liver-dogs);
+    margin-top: 0px;
+}
+
+main .site-title h2{
+    color: var(--liver-dogs);
+    margin-top: -150px;
+    text-shadow:
+        -2px 2px 5px #000,
+        2px 2px 5px #000,
+        2px -2px 5px #000,
+        -2px -2px 5px #000;
+    text-decoration: underline;
+}
+
+main .site-title .btn{
+    margin-top: 10px;
+    background: var(--line);
+}
+
+main .site-title .btn:hover{
+    background: transparent;
+    border: solid var(--fawn)  5px;
+    color:var(--fawn);
+    
+
+}
+
+main .site-title a{
+    color: black;
+}
+
+
+/*-------------------- /Site Title --------------------*/
+
+/* --------------- Blog Carousel ------------ */
+
+main .blog{
+    background: url('../assest/homebackground1.png');
+    background-size: cover;
+    background-position: left;
+    height: auto;
+    width: 100%;
+    background-size: 65%;
+}
+
+.card-img-top {
+    padding-top: 2rem;
+    height: 300px;
+    width: 500px;
+    display:grid;
+}
+
+.owl-theme, owl-nav[class*="owl-"]
+
+/* -------------- /Blog Carousel ----------- */
+
+/* ---------------- Site Content ----------------*/
+.blogcontainer {
+     display: grid;
+     height: 50vh;
+}
+
+#attn {
+    font-size: 2rem;
+    color: rgb(0, 183, 255);
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Arvo', serif;
+}
+
+#blogcontainer-1 {
+    font-family: 'Arvo', serif;
+    text-align: center;
+    font-size: 1.5rem;    
+    color: rgb(0, 0, 0);
+}
+
+#blogcontainer-2 {
+    text-decoration: black;
+    text-align: center;    
+    font-size: 1.25rem;
+
+}
+#list {margin: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(4, 0, 255);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 2em;
+}
+
+#lines_u {
+    font-size: 2rem;
+    color: rgb(74, 104, 59);
+    text-decoration: underline;
+}
+
+#discount {
+        font-family: 'Arvo', serif;
+}
+/* --------------- /Site Content ---------------*/
+/* --------------- /Picture SLideshow ---------------*/
+
+/*-------------------- /Main site Section --------------------*/
+
+/*-------------------- footer --------------------*/
+
+footer.footer{
+    height: 100%;
+    background: var(--dark-moss-green);
+    position: relative;
+    color: var(--cornsilk);
+}
+footer.footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr .5fr;
+    border-top: solid black 10px;
+    font-size: 1.3rem;
+    
+}
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 2rem .9rem;
+    
+}
+
+footer.footer .container .site-map li{
+    list-style: inside;
+    font-family: var(--NunitoRegular);
+    font-size: 1rem;
+}
+
+footer.footer .container iframe{
+    min-height: 250px;
+    border: solid black 3px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+
+footer.footer .rights{
+    justify-content: center;
+    font-family: var(--NunitoExtraLight);
+    background-color: var(--smoky-black);
+    color: var(--fawn);
+    text-align: center;
+}
+
+footer.footer .rights h4 a{
+    color: var(--fawn);
+    
+}
+
+footer.footer .move-up{
+    position: absolute;
+    right: 3%;
+    top: 20%;
+}
+
+footer.footer .move-up span{
+    color: black;
+}
+
+footer.footer .move-up span:hover{
+    color: var(--fawn);
+    cursor: pointer;
+}
+/*-------------------- /footer --------------------*/
+
+
+/*-------------------- Viewport less then or equal to 920px --------------------*/
+@media only screen and (max-width: 920px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+/*-------------------- /Viewport less then or equal to 750px --------------------*/
