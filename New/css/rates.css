@@ -2,7 +2,7 @@
     padding-top: 1rem;
     color: red;
     font:bolder;
-    font-size: 3rem;
+    font-size: auto;
     text-align: center;
 
 }
@@ -10,3 +10,25 @@
 #icon-rates{
     color: rgb(0, 38, 255);
  }
+
+ .tg {
+    font-size: 18px;
+}
+
+@media all and (max-device-width: 720px){
+     .your-class {
+        font-size: 16px;
+    }
+}
+
+@media all and (max-device-width: 640px){
+     .your-class {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-device-width: 320px){
+     .your-class {
+        font-size: 10px;
+    }
+}
