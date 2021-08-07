@@ -73,7 +73,7 @@ button.btn{
     border: none;
     border-radius: 2rem;
     padding: 1rem 3rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: var(--HindSiliguriMedium);
     cursor: pointer;
 }
@@ -104,7 +104,7 @@ button.btn{
     text-shadow: none;
     padding-top: 1rem;
     position: static;
-    font-size: 3rem;
+    font-size: 2rem;
 
 }
 
@@ -138,7 +138,7 @@ button.btn{
 
 
 .collapse{
-    height: 38rem;
+    height: 28rem;
 }
 
 .nav .nav-items{   
@@ -166,7 +166,7 @@ button.btn{
 .nav .nav-brand a{
     font-size: 1.6rem;
     padding: 1rem 0;
-    ;
+    height: auto;
     display: block;
     font-family: var(--Yellowtail);
     font-size: 1.6rem;
@@ -201,16 +201,24 @@ button.btn{
 main .site-title{
     background: url(../assest/logo.jpg);
     background-size:cover;
-    height: 40vh;
     display: flex;
     justify-content: center;
     border-top:solid black .2rem;
     border-bottom:solid black .2rem;
+    height: 35vh;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 main .site-title .site-background{    
     text-align: center;
     color: white;
+    height: 10rem;
+    width: 100%;
+    max-width: auto;
+    max-height: auto;
+    position: relative;
 }
 
 main .site-title h1{
@@ -220,12 +228,25 @@ main .site-title h1{
     2px -2px 5px #000,
     -2px -2px 5px #000;
     color: var(--liver-dogs);
-    margin-top: 0px;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    }
+
+main .title {
+    text-align: center;
+    margin-top: 12.5rem;
 }
 
 main .site-title h2{
     color: var(--liver-dogs);
-    margin-top: -150px;
+    position: relative;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    font-size: 2vw;
     text-shadow:
         -2px 2px 5px #000,
         2px 2px 5px #000,
@@ -235,15 +256,15 @@ main .site-title h2{
 }
 
 main .site-title .btn{
-    margin-top: 10px;
     background: var(--line);
+    font-size: 1vw;
+    position: static;
 }
 
 main .site-title .btn:hover{
     background: transparent;
     border: solid var(--fawn)  5px;
     color:var(--fawn);
-    
 
 }
 
@@ -279,12 +300,12 @@ main .blog{
 /* ---------------- Site Content ----------------*/
 .blogcontainer {
      display: grid;
-     height: 50vh;
+     height: auto;
 }
 
 #attn {
     font-size: 2rem;
-    color: rgb(0, 183, 255);
+    color: rgb(4, 0, 255);
     text-decoration: underline;
     text-align: center;
     font-family: 'Arvo', serif;
@@ -303,16 +324,21 @@ main .blog{
     font-size: 1.25rem;
 
 }
-#list {margin: auto;
-    width: 50%;
+#list {
+    margin: auto;
     text-align: center;
     font-size: 1rem;
     color: rgb(4, 0, 255);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     line-height: 2em;
-}
+    padding: auto;
+    }
 
+#links{
+color: blue;
+
+}
 #lines_u {
     font-size: 2rem;
     color: rgb(74, 104, 59);
@@ -323,6 +349,7 @@ main .blog{
         font-family: 'Arvo', serif;
 }
 /* --------------- /Site Content ---------------*/
+
 /* --------------- /Picture SLideshow ---------------*/
 
 /*-------------------- /Main site Section --------------------*/
