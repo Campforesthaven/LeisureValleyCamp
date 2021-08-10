@@ -1,0 +1,11 @@
+  .act-text{
+  font-size: 3.5em;
+  font-weight: 900;
+  font-family: var(--Yellowtail);
+  text-align: center;
+  padding-top: 1rem;
+  }
+
+.img-act{
+  padding-bottom: 2rem;
+}
