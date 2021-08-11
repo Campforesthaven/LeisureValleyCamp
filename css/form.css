@@ -1,34 +1,21 @@
-
 #form_container
 {
-	padding:15px 15px;
-	margin-top:15px;
 	background: #9b9b9b;	
   font-weight: bolder;
 }
-body
-{
-	background-size: cover;
-	background-repeat:no-repeat;
 
-}
-.upload-btn-wrapper 
-{
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-  padding: 0%;
+.left{
+  width: 25%;
+  float: left;
+  text-align: right;
 }
 
-.upload-btn-wrapper input[type=file] 
-{
-  font-size: 10px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
+.right{
+  width: 65%;
+  margin-left: 2px;
+  float: left;
 }
 
-textarea {
-width: auto;
+.button{
+  margin: 1rem;
 }

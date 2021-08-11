@@ -1,27 +1,23 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-/*
-Tested working with PHP5.4 and above (including PHP 7 )
+//get data from form  
 
- */
-require_once './vendor/autoload.php';
-
-use FormGuide\Handlx\FormHandler;
+$name = $_POST['name'];
+$email= $_POST['emailaddress'];
+$number= $_POST['phone'];
+$message= $_POST['message'];
 
 
-$pp = new FormHandler(); 
-
-$validator = $pp->getValidator();
-$validator->fields(['name','email'])->areRequired()->maxLength(50);
-$validator->field('email')->isEmail();
-$validator->field('message')->maxLength(6000);
+$to = "kumarorlewicz@gmail.com";
 
 
-$pp->attachFiles(['image']);
+$subject = "New Submission from Leisure Valley Contact Us Form";
+$txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Phone = " . $number . "\r\n Message =" . $message;
 
-
-$pp->sendEmailTo('leisurevalleycamp@gmail.com'); // ← Your email here
-
-echo $pp->process($_POST);
+$headers = "From: noreply@yoursite.com" . "\r\n" .
+"CC: somebodyelse@example.com";
+if($email!=NULL){
+    mail($to,$subject,$txt,$headers);
+}
+//redirect
+header("Location:thankyou.html");
+?>
