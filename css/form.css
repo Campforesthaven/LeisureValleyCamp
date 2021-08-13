@@ -5,24 +5,13 @@
 }
 
 .left{
-  width: 25%;
-  float: left;
   text-align: right;
 }
 
 .right{
-  width: 65%;
-  margin-left: 2px;
   float: left;
 }
 
 .button{
   margin: 1rem;
-}
-
-#constr{
-text-align: center;
-color: rgb(117, 0, 0);
-font-size:larger;
-
 }
