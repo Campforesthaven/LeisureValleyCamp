@@ -7,7 +7,7 @@ $number= $_POST['phone'];
 $message= $_POST['message'];
 
 
-$to = "kumarorlewicz@gmail.com";
+$to = "stay@campforesthaven.com";
 
 
 $subject = "New Submission from Leisure Valley Contact Us Form";
